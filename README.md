@@ -1,5 +1,5 @@
 # YCP Tech Conference project
-web design 2 semester long porject
+web design 2 semester long project
 
 what you'll fing in here 
 -html
