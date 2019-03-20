@@ -96,10 +96,38 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body{
+    background-image: linear-gradient(to bottom right, #064F8D, #581226);
+    background-repeat: no-repeat;
+    height: 1224px;   
+}
 
+header{
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+.logo{
+    margin: 10px;
+}
+    
+.menu ul{
+    display: flex;
+    list-style-type: none;
+}
 
+.menu ul li{
+    margin: 0px 30px 0px 30px;
+}
 
+menu ul li a{
+linedecoration: none;
+    
+}
 
 
 
