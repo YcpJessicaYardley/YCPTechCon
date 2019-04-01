@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -99,7 +100,7 @@ textarea {
 body{
     background-image: linear-gradient(to bottom right, #064F8D, #581226);
     background-repeat: no-repeat;
-    height: 1224px;   
+    height: auto;   
 }
 
 header{
@@ -125,10 +126,46 @@ header{
 }
 
 menu ul li a{
-linedecoration: none;
+text-decoration: none;
+    
+    
+}
+.squeeze_me{
+padding: 2% 15% 2% 5%;
+    
+}
+.hero_section h1{
+font-family: 'Roboto', sans-serif;
+color: #fff;
+font-weight: bold;
+font-size: 72px;
+
+} 
+.hero_section h2 {
+font-family: 'Roboto', sans-serif;
+color: #EA4E4F;
+font-size: 60px;
+font-weight: bold;
+    
+} 
+
+.about_section{
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 24px;
+color: #EA4E4F;
+padding: 2% 60% 2% 5%; 
+    
+}
+.speaker_images{
+width: 157.5px;
+height: 242px;
+padding: none;
     
 }
 
+ 
+ 
 
 
 
