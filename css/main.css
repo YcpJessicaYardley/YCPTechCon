@@ -158,9 +158,10 @@ padding: 2% 60% 2% 5%;
     
 }
 .speaker_images{
-width: 157.5px;
-height: 242px;
-padding: none;
+max-width: 157.5px;
+max-height: 242px;
+padding: 2% 6% 2% 6%;
+grid-row: auto;
     
 }
 
