@@ -103,6 +103,10 @@ body{
     height: auto;   
 }
 
+.no_grad{
+    background: #fff;
+}
+
 header{
     height: auto;
     width: 100%;
@@ -119,6 +123,7 @@ header{
 .menu ul{
     display: flex;
     list-style-type: none;
+    
 }
 
 .menu ul li{
@@ -126,6 +131,7 @@ header{
 }
 
 menu ul li a{
+display: block;
 text-decoration: none;
     
     
@@ -157,12 +163,33 @@ color: #EA4E4F;
 padding: 2% 60% 2% 5%; 
     
 }
-.speaker_images{
-max-width: 157.5px;
-max-height: 242px;
-padding: 2% 6% 2% 6%;
-grid-row: auto;
+/* speaker styling*/
+.header_pic{
+width: 614.7px;
+height: 92px;
+padding: 10%;
+}
+.speaker_grid{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin:auto;
+    flex-direction: row;
+    flex-wrap:wrap;
+}       
+
+.img-gallery {
+width:13rem;
+margin:.3rem;
     
+}
+
+/* sponsor styling*/
+
+.sponsors-gallary{
+width:13rem;
+margin:1rem; 
 }
 
  
