@@ -182,21 +182,28 @@ padding: 2% 60% 2% 5%;
 }
  
 footer{
-   height: 700px;
-    width: 100%;
-    background-color: #591F35;
-    display: flex;
-    flex-direction: row;
-    align-items: center; 
-    padding-left: 5%;
+height: 700px;
+width: 100%;
+background-color: #591F35;
+display: flex;
+flex-direction: row;
+ 
     
 }
+.map{
+padding-left: 5%;
+ padding-top: 5%;
+    
+}
+
 /* speaker styling*/
+
 .header_pic{
 width: 614.7px;
 height: 92px;
 padding: 10%;
 }
+
 .speaker_grid{
     width: 85%;
     display: flex;
@@ -212,6 +219,81 @@ width:13rem;
 margin:.3rem;
     
 }
+/* speaker vertical menu styling*/
+
+
+/*speakers-in depth bio */
+
+.speaker_column{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items:top;
+    margin:auto;
+    flex-direction: row;
+}       
+.speaker_box{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    
+}
+.speaker_box img {
+    width: 400px;
+        height: auto;
+    
+    
+}
+
+.vertical-menu {
+  width: 28%;
+  height: 250px;
+  overflow-y: auto;
+
+}
+
+.vertical-menu a {
+  background-color: #fff; 
+  color: #063E8D; 
+  display: block; /* Make the links appear below each other */
+  padding: 2% 60% 2% 5%;  /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #EA4E4F; /* Add a green color to the "active/current" link */
+  color: white;
+    
+}
+.name{
+color:#581226;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+font-size: 96px;
+}
+
+.job_title{
+color:#581226;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 48px;
+}
+  
+.bio{
+color:#581226;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 24px;   
+}
+
+
+
 
 /* sponsor styling*/
 
