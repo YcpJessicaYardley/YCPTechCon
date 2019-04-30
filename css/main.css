@@ -15,6 +15,9 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    scroll-behavior: smooth;
+    color: #063E8D;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*
@@ -217,12 +220,13 @@ padding: 10%;
 .img-gallery {
 width:13rem;
 margin:.3rem;
+
     
 }
-/* speaker vertical menu styling*/
 
 
 /*speakers-in depth bio */
+
 
 .speaker_column{
     width: 95%;
@@ -231,9 +235,18 @@ margin:.3rem;
     align-items:top;
     margin:auto;
     flex-direction: row;
-}       
-.speaker_box{
+}
+
+.speaker_info{
     width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items:top;
+    margin:auto;
+    flex-direction: column;
+}
+.speaker_box{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: left;
@@ -246,6 +259,7 @@ margin:.3rem;
     
     
 }
+/* speaker vertical menu styling*/
 
 .vertical-menu {
   width: 28%;
@@ -263,33 +277,31 @@ margin:.3rem;
 }
 
 .vertical-menu a:hover {
-  background-color: #ccc; /* Dark grey background on mouse-over */
+  background-color: #EA4E4F; /* Dark grey background on mouse-over */
 }
 
-.vertical-menu a.active {
-  background-color: #EA4E4F; /* Add a green color to the "active/current" link */
-  color: white;
+
     
 }
 .name{
 color:#581226;
 font-family: 'Roboto', sans-serif;
 font-weight: 700;
-font-size: 96px;
 }
 
 .job_title{
 color:#581226;
 font-family: 'Roboto', sans-serif;
 font-weight: 400;
-font-size: 48px;
+font-size: 24px;
 }
+
   
 .bio{
 color:#581226;
 font-family: 'Roboto', sans-serif;
 font-weight: 400;
-font-size: 24px;   
+font-size: 18px;
 }
 
 
@@ -308,7 +320,7 @@ margin:1rem;
 font-family: 'Roboto', sans-serif;
 font-weight: 400;
 font-size: 20px;
-color: #591F35;
+color: #591226;
 padding-left: 5%;
 display:flex;
     
@@ -331,7 +343,7 @@ padding: 5% 5% 5% 5%;
 }
 
 .schedule tr td{
-        display: flex;
+    display: flex;
     justify-content: normal;
     
 }
@@ -342,6 +354,100 @@ padding: 5% 5% 5% 5%;
     border-top: 2px orange solid;
 }
 
+
+/*ticket and paying page*/
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 20px -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 20px 16px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 5px 25px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+    width: 60%;
+    flex-direction: column;
+}
+
+input[type=text] {
+  width: 55%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #581226;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+}
+
+.btn {
+  background-color: #063E8D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+font-weight: 400;
+}
+
+.btn:hover {
+  background-color: #EA4E4F;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
  
 
 
