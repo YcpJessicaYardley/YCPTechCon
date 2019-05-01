@@ -124,7 +124,7 @@ header{
     font-style: normal;
     font-weight: normal;
     text-decoration: none;
-    color: #3B4475;
+    color: #063E8D;
     font-size: 15px;
     line-height: normal;
     text-align: center;
@@ -202,8 +202,7 @@ padding-left: 5%;
 /* speaker styling*/
 
 .header_pic{
-width: 614.7px;
-height: 92px;
+width:70%;
 padding: 10%;
 }
 
@@ -225,7 +224,7 @@ margin:.3rem;
 }
 
 
-/*speakers-in depth bio */
+/*speakers-in depth bio  this is also syling for the sponsor pages*/
 
 
 .speaker_column{
@@ -254,17 +253,24 @@ margin:.3rem;
     
 }
 .speaker_box img {
-    width: 400px;
-        height: auto;
+    width: 60%;
+    height: auto;
+    padding:;
+
     
     
 }
 /* speaker vertical menu styling*/
 
 .vertical-menu {
-  width: 28%;
-  height: 250px;
-  overflow-y: auto;
+    width: 28%;
+    height: 250px;
+    overflow-y: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1em;
+
+    
 
 }
 
@@ -281,12 +287,16 @@ margin:.3rem;
 }
 
 
-    
+ /* styling for bios for indepth speaker page */   
 }
+
+}
+
 .name{
 color:#581226;
 font-family: 'Roboto', sans-serif;
 font-weight: 700;
+font-size: 96px;
 }
 
 .job_title{
@@ -332,9 +342,38 @@ padding: 5% 5% 5% 5%;
     
 }
 
+/* the day menu nav for the schedule page */
+
+
+
+.day_menu {
+  background-color: #fff;
+  overflow: hidden;
+    width: 40%
+}
+
+/* Style the links inside the navigation bar */
+.day_menu a {
+  float: left;
+  color:#063E8D ;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.day_menu a:hover {
+  background-color: #EA4E4F; /* Dark grey background on mouse-over */
+ color: #fff;
+}
+ /*new schedule setup*/
+
+}
 /* table schedule */
 
 .schedule{
+padding: 2% 15% 2% 5%;
     
 }
 
@@ -345,7 +384,8 @@ padding: 5% 5% 5% 5%;
 .schedule tr td{
     display: flex;
     justify-content: normal;
-    
+    padding: 2% 15% 2% 5%; 
+    flex-direction: column
 }
 
 /* tbd */
@@ -354,6 +394,63 @@ padding: 5% 5% 5% 5%;
     border-top: 2px orange solid;
 }
 
+.schedule p {
+    border-top: 2px #EA4E4F solid;
+    
+}
+
+
+/*registar form page*/
+
+/* Style the form */
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none; 
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
 
 /*ticket and paying page*/
 

@@ -18,6 +18,32 @@
 </head>
 
 <body class="no_grad">
+    
+    <!-- styling for the schedule -->
+           <style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  height: 300px; 
+  color:#581226;
+    /* Should be removed. Only for demonstration */
+}
+    
+                       
+               }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 
   <!-- heading contains logo and menu nav -->
     
@@ -30,9 +56,9 @@
                 <li><a href="index.html" class="headings">Home</a></li>
                 <li><a href="index.html" class="headings">About</a></li>
                 <li><a href="sponsor%20page.html" class="headings">Sponsors</a></li>
-                <li><a href="speakers%20page.html" class="headings">Speakers</a></li>
+                <li><a href="speakers%20page%20copy.html" class="headings">Speakers</a></li>
                 <li><a href="schedule_page.html" class="headings">Schedule</a></li>
-                <img  class="tix_button" src="imgs/tix_button.png"href=tix_pg.html> 
+                <li><a href="tix_page.html" class="headings"><img src="imgs/tix_button.png" class="tix_button"></a></li> 
             </ul>
         </div>
        
@@ -42,329 +68,249 @@
     <!-- schedule content -->
     
     <img class="header_pic" src="imgs/schedule%20header.png" alt="Schedule">
+    
+    
+    <!--day menu -->
+    <div class="day_menu">
+  <a href="#day1">Day 1</a>
+  <a href="#day2">Day 2</a>
+  <a href="#day3">Day 3</a>
+
+</div>
    
     <!-- day one content -->
            
     <section>
+          <!-- day one heading -->
         
-        <img  class="day"src="imgs/Day%201.png" alt="Day One"> 
+   
         
-         <div class="schedule_content">
-             <h3>October 4th, 2019</h3> 
-                 
-    <table class="schedule">
-	<tbody>
-		<tr class="upperline">
-			<td>7am - 8am</td>
-			<td>Registration &amp; Breakfast</td>
-			<td>Lobby</td>
-		</tr>
-		<tr>
-			<td>8am - 8:30am</td>
-			<td>
-				<p>Chuck Russel - Organizer</p>
-				<p style = "font-style:oblique">Kickoff Speach</p>
-			</td>
-			<td>Grand Ballroom</td>
-		</tr>
-		<tr>
-			<td>8:45am - 9:30am</td>
-			<td>
-				<p>Dave Alpert</p>
-				<p style = "font-style:oblique">Augmented Reality in a Fracture Reality</p>
-				<p>Leemay Nassery</p>
-				<p style = "font-style:oblique">Digital Experiences On-Demand</p>
-				<p>Renaud Visage</p>
-				<p style = "font-style:oblique">Ruby On Rails Migration</p>
-			</td>
-			<td>
-				<p>Ballroom A</p>
-				<p>Ballroom B</p>
-				<p>Ballroom C</p>
-			</td>
-		</tr>
-		<tr>
-			<td>9:45am - 10:30am</td>
-			<td>
-				<p>Jeff Beck</p>
+       
+             
+       <!-- day one schedule info -->  
+               
+
+
+<section>
+
+ <!-- 7 am to 8am section --> 
+
+<div class="row">
+  <div class="column" >
+    <h3>7am - 8am</h3>
+
+  </div>
+  <div class="column" >
+    <h3>Registration &amp; Breakfast</h3>
+    <p>Some text..</p>
+  </div>
+  <div class="column" >
+    <p>Lobby</p>
+
+  </div>
+</div>
+    
+    <!-- 8 am to 8:30am section --> 
+    
+<div class="row">
+  <div class="column" >
+    <h3>8am - 8:30am</h3>
+
+  </div>
+  <div class="column" >
+    <h3>Chuck Russel - Organizer</h3>
+    <p style = "font-style:oblique">Kickoff Speach</p>
+  </div>
+  <div class="column" >
+    <h3>Grand Ballroom</h3>
+    <p>Some text..</p>
+  </div>
+</div>
+    <!-- 8:45am - 9:30amn -->     
+<div class="row">
+  <div class="column" >
+    <h3>8:45am - 9:30am</h3>
+
+  </div>
+  <div class="column" >
+    <p>Dave Alpert</p>
+<p style = "font-style:oblique">Augmented Reality in a Fracture Reality</p>
+<p>Leemay Nassery</p>
+<p style = "font-style:oblique">Digital Experiences On-Demand</p>
+<p>Renaud Visage</p>
+<p style = "font-style:oblique">Ruby On Rails Migration</p>
+  </div>
+  <div class="column" >
+ <p>Ballroom A</p>
+<p>Ballroom B</p>
+<p>Ballroom C</p>
+  </div>
+</div> 
+    
+    <!--9:45am - 10:30am-->
+<div class="row">
+  <div class="column" >
+    <h3>9:45am - 10:30am</h3>
+
+  </div>
+  <div class="column" >
+                <p>Jeff Beck</p>
 				<p style = "font-style:oblique">SmartThings - An Origin Story</p>
 				<p>Romain Guy</p>
 				<p style = "font-style:oblique">Beginning Angular 2.0</p>
 				<p>Tricia Katz</p>
 				<p style = "font-style:oblique">Continuous Development Pipeline Considerations</p>
-			</td>
-			<td>
-				<p>Ballroom A</p>
+
+  </div>
+  <div class="column" >
+    	       <p>Ballroom A</p>
 				<p>Ballroom B</p>
 				<p>Ballroom C</p>
-				</td>
-		</tr>
-		<tr>
-			<td>10:45am - 11:30am</td>
-			<td>
-				<p>Phil Nash</p>
+  </div>
+</div>  
+    <!--10:45am - 11:30am-->
+<div class="row">
+  <div class="column">
+    <h3>10:45am - 11:30am</h3>
+
+  </div>
+  <div class="column">
+                <p>Phil Nash</p>
 				<p style = "font-style:oblique">Social Data Algorithims</p>
 				<p>Marie Leaf</p>
 				<p style = "font-style:oblique">Blockchain - From out of the Dark Web to Civic Engagement</p>
-				<p>Elisha Dvorak</p>
+                <p>Elisha Dvorak</p>
 				<p style = "font-style:oblique">Adobe Experience Manager Primer</p>
-			</td>
-			<td>
-				<p>Ballroom A</p>
+
+  </div>
+  <div class="column">
+    	       <p>Ballroom A</p>
 				<p>Ballroom B</p>
 				<p>Ballroom C</p>
-				</td>
-		</tr>
-		<tr>
-			<td>11:45am - 1:15pm</td>
-			<td>Lunch</td>
-			<td>Grand Ballroom</td>
-		</tr>
-		<tr>
-			<td>1:30pm - 2:15pm</td>
-			<td>
-				<p>E.G Nadhan</p>
+  </div>
+</div>
+    
+    <!--11:45am - 1:15pm-->
+    
+<div class="row">
+  <div class="column">
+    <h3>11:45am - 1:15pm</h3>
+
+  </div>
+  <div class="column">
+    <h3>Lunch</h3>
+    
+  </div>
+  <div class="column">
+    <h3>Grand Ballroom</h3>
+    
+  </div>
+</div>  
+    <!--1:30pm - 2:15pm-->
+<div class="row">
+  <div class="column">
+    <h3>1:30pm - 2:15pm</h3>
+
+  </div>
+  <div class="column">
+                <p>E.G Nadhan</p>
 				<p style = "font-style:oblique">Linux and IIS</p>
 				<p>Dana White</p>
 				<p style = "font-style:oblique">Digital Media Experiences</p>
 				<p>Cal Henderson</p>
 				<p style = "font-style:oblique">Meaningful Digital Communication</p>
-			</td>
-			<td>
-				<p>Ballroom A</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+                <p>Ballroom A</p>
 				<p>Ballroom B</p>
 				<p>Ballroom C</p>
-				</td>
-		</tr>
-		<tr>
-			<td>2:30pm - 3:15pm</td>
-			<td>
-				<p>Melanie Sumner</p>
-				<p style = "font-style:oblique">Ember.js vs Electron - A Breakdown</p>
-				<p>Harry Roberts</p>
-				<p style = "font-style:oblique">Google Analytics in the age of Privacy</p>
-				<p>Rebecca Fitzhuh</p>
-				<p style = "font-style:oblique">Brining Military Discipline into the Agile Environment</p>
-			</td>
-			<td>
-				<p>Ballroom A</p>
-				<p>Ballroom B</p>
-				<p>Ballroom C</p>
-				</td>
-		</tr>
-		<tr>
-			<td>3:30pm - 4:15pm</td>
-			<td>
-				<p>Matt Layman</p>
-				<p style = "font-style:oblique">Python Foundations</p>
-				<p>Rohit Basu</p>
-				<p style = "font-style:oblique">Online Payments that Don't Suck</p>
-				<p>Sarah Squire</p>
-				<p style = "font-style:oblique">OpenID Foundation Pursuits</p>
-			</td>
-			<td>
-				<p>Ballroom A</p>
-				<p>Ballroom B</p>
-				<p>Ballroom C</p>
-			</td>
-		</tr>
-		<tr>
-			<td> 4:30pm - On</td>
-			<td>Technology Lounge - Bar and Lounge</td>
-			<td>First Two Floors of the Hotel</td>
-		</tr>
-	</tbody>
-</table>
-        </div>
-                 
-    <!-- day two content -->
-                 
-             <img class="day"src="imgs/Day%202.png" alt="Day Two">
-            
-       <div class="schedule_content"> 
-                
-           <h3>October 5th, 2019</h3>
-        <table>
-	<tbody>
-		<tr>
-			<td>7- 8am</td>
-			<td>Registration &amp; Breakfast</td>
-			<td>Lobby</td>
-		</tr>
-		<tr>
-			<td>8 - 8:30am</td>
-			<td>
-				<p>Chuck Russel - Organizer</p>
-				<p style = "font-style:oblique">Day Highlights</p>
-			</td>
-			<td>Grand Ballroom</td>
-		</tr>
-		<tr>
-			<td>8:45am - 9:30am</td>
-			<td>
-				<p>Sarah Drasner</p>
-				<p style = "font-style:oblique">Advanced SCSS</p>
-				<p>Michael Albers</p>
-				<p style = "font-style:oblique">Authentication Systems and Tokens</p>
-				<p>Ryan King</p>
-				<p style = "font-style:oblique">Customer Experience at the Gallery</p>
-			</td>
-			<td>
-				<p>Ballroom A</p>
-				<p>Ballroom B</p>
-				<p>Ballroom C</p>
-			</td>
-		</tr>
-		<tr>
-			<td>9:45am - 11am</td>
-			<td>
-				<p>Panel Moderator: Allison Lowery</p>
-				<p style = "font-style:oblique">Panel Discussion: Venture Capital in Transformative Technology</p>
-				<p>Panelist: Phil Nash</p>
-				<p>Panelist: Harry Roberts</p>
-				<p>Panelist: Melanie Sumner</p>
-				<p>Panelist: Rohit Basu</p>
-			</td>
-			<td>Grand Ballroom</td>
-		</tr>
-		<tr>
-			<td>11:15am - Noon</td>
-			<td>
-				<p>Sponsor Hall</p>
-				<p style = "font-style:oblique">Sponsor Presentations</p>
-			</td>
-			<td>Lobby</td>
-		</tr>
-		<tr>
-			<td>Noon - 1:15pm</td>
-			<td>Lunch</td>
-			<td>Grand Ballroom</td>
-		</tr>
-		<tr>
-			<td>1:30pm - 2:15pm</td>
-			<td>
-				<p>Leemay Nassery</p>
-				<p style = "font-style:oblique">Modern Fullstack Workflo
-                    <p>Marie Leaf</p>
-				<p style = "font-style:oblique">Educating the Future of Technology
-                <p>Dave Alpert</p>
-				<p style = "font-style:oblique">Geo-Services Powering Everything</p>
-			</td>
-            <td><p>Ballroom A</p>
-                <p>Ballroom B</p>
-                <p>Ballroom C</p>
-            </td>
-		</tr>
-		<tr>
-			<td>2:30pm - 3:45pm</td>
-			<td>
-				<p>Panel Moderator: David Hickthier</p>
-				<p style = "font-style:oblique">Modern User Interfaces</p>
-				<p>Panelist: Brad Frost</p>
-				<p>Panelist Sarah Drasner</p>
-				<p>Panelist: Romain Guy</p>
-			</td>
-			<td >Grand Ballroom</td>
-		</tr>
-		<tr>
-			<td> 4pm - 4:30pm</td>
-			<td>Sponsor Hall</td>
-			<td>Lobby</td>
-		</tr>
-		<tr>
-			<td> 4:30pm - On</td>
-			<td>Harrisburg Senators Ballpark After Parth</td>
-			<td>City Island</td>
-		</tr>
-	</tbody>
-</table>
-                </div>
+  </div>
+</div>  
+    <!--9:45am - 10:30am-->
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>7am - 8am</h2>
+
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Registration &amp; Breakfast</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Lobby</h2>
+    <p>Some text..</p>
+  </div>
+</div>
     
-            <!-- day three content -->
+      <!--9:45am - 10:30am-->
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>7am - 8am</h2>
+
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Registration &amp; Breakfast</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Lobby</h2>
+    <p>Some text..</p>
+  </div>
+</div>
     
-                    <img  class="day" src="imgs/Day%203.png" alt="Day 3">
-           
-        <div class="schedule_content">
-            <h3>October 6th, 2019</h3>
-        <table>
-<tbody>
-<tr>
-    <td>7am - 8am</td>
-    <td>Registration &amp; Breakfast</td>
-    <td>Lobby</td>
-</tr>
-<tr>
-    <td>8am - 8:30am</td>
-<td>
-    <p>Chuck Russel - Organizer</p>
-    <p style = "font-style:oblique">Kickoff Speech</p>
-</td>
-    <td>Grand Ballroom</td>
-</tr>
-<tr>
-    <td>8:45am - 9:30am</td>
-<td>
-    <p>Elisha Dvorak</p>
-    <p style = "font-style:oblique">eLearning and Content Design</p>
-    <p>Cal Henderson</p>
-    <p style = "font-style:oblique">Scaling a Business Exponentially</p>
-    <p>Marie Leaf</p>
-    <p style = "font-style:oblique">Authenticaing Security Tokens</p>
-</td>
-<td>
-    <p>Ballroom A</p>
-    <p>Ballroom B</p>
-    <p>Ballroom C</p>
-</td>
-</tr>
-<tr>
-    <td>9:45am - 10:30am</td>
-<td>
-    <p>Tricia Katz</p>
-    <p style = "font-style:oblique">VUI integrations in your CX</p>
-    <p>Matt Layman</p>
-    <p style = "font-style:oblique">Digital Childhood Frontier</p>
-    <p>Dana White</p>
-    <p style = "font-style:oblique">Headless CMS</p>
-</td>
-<td>
-    <p>Ballroom A</p>
-    <p>Ballroom B</p>
-    <p>Ballroom C</p>
-</td>
-</tr>
-<tr>
-    <td>10:45am - 11:30am</td>
-<td>
-    <p>E.G. Nadhan</p>
-    <p style = "font-style:oblique">Open Source in Enterprise</p>
-    <p>Renuad Visage</p>
-    <p style = "font-style:oblique">Open API's</p>
-    <p>Ryan King</p>
-    <p style = "font-style:oblique">Data Processing and Synergy</p>
-</td>
-<td>
-    <p>Ballroom A</p>
-    <p>Ballroom B</p>
-    <p>Ballroom C</p>
-</td>
-</tr>
-<tr>
-    <td>11:45am - 1:15pm</td>
-    <td>Lunch</td>
-    <td>Grand Ballroom</td>
-</tr>
-<tr>
-    <td>1:30pm - 2pm</td>
-    <td>
-    <p>Chuck Russel - Organizer</p>
-    <p style = "font-style:oblique">Final Comments</p>
-    </td>
-    <td>Grand Ballroom</td>
-</tr>
-</tbody>
-</table>
-               </div>
+      <!--9:45am - 10:30am-->
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>7am - 8am</h2>
+
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Registration &amp; Breakfast</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Lobby</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+    
+      <!--9:45am - 10:30am-->
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>7am - 8am</h2>
+
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Registration &amp; Breakfast</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Lobby</h2>
+    <p>Some text..</p>
+  </div>
+    
+    
+</div>  <!--9:45am - 10:30am-->
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>7am - 8am</h2>
+
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Registration &amp; Breakfast</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Lobby</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+    
+             </section>
+    
+       <section>      
+              
+
                
     </section>
     <footer >
