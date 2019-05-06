@@ -103,7 +103,8 @@ textarea {
 body{
     background-image: linear-gradient(to bottom right, #064F8D, #581226);
     background-repeat: no-repeat;
-    height: auto;   
+    height: auto;
+    width: auto;
 }
 
 .no_grad{
@@ -129,15 +130,27 @@ header{
     line-height: normal;
     text-align: center;
 }
-
+.hidden_headings{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color: #063E8D;
+    font-size: 15px;
+    line-height: normal;
+    text-align: center;
+    display: none;
+}
 .logo{
     margin: 10px;
 }
-    
+   
+.menu{
+    width: auto;
+}
 .menu ul{
     display: flex;
-    list-style-type: none;
-    
+    list-style-type: none;    
 }
 
 .menu ul li{
@@ -146,16 +159,15 @@ header{
 
 menu ul li a{
 display: block;
-text-decoration: none;
-    
-    
-    
+text-decoration: none;    
 }
-.tix_button{
+.tix_heading{
 width: 219,5px;
 height: 40px;
-
 }
+
+
+
 .squeeze_me{
 padding: 2% 15% 2% 5%;
     
@@ -187,7 +199,7 @@ padding: 2% 60% 2% 5%;
 footer{
 height: 700px;
 width: 100%;
-background-color: #591F35;
+background-color: #591226;
 display: flex;
 flex-direction: row;
  
@@ -219,8 +231,18 @@ padding: 10%;
 .img-gallery {
 width:13rem;
 margin:.3rem;
+   -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
 
-    
+.img-gallery:hover {
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.img-name {
+width:13rem;
+margin:.3rem;
 }
 
 
@@ -249,16 +271,12 @@ margin:.3rem;
     display: flex;
     justify-content: center;
     align-items: left;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
 .speaker_box img {
     width: 60%;
     height: auto;
-    padding:;
-
-    
-    
+    padding:;    
 }
 /* speaker vertical menu styling*/
 
@@ -269,9 +287,6 @@ margin:.3rem;
     position: -webkit-sticky;
     position: sticky;
     top: 1em;
-
-    
-
 }
 
 .vertical-menu a {
@@ -288,9 +303,7 @@ margin:.3rem;
 
 
  /* styling for bios for indepth speaker page */   
-}
 
-}
 
 .name{
 color:#581226;
@@ -332,8 +345,7 @@ font-weight: 400;
 font-size: 20px;
 color: #591226;
 padding-left: 5%;
-display:flex;
-    
+display:flex;  
 }
  
 .day{
@@ -349,10 +361,11 @@ padding: 5% 5% 5% 5%;
 .day_menu {
   background-color: #fff;
   overflow: hidden;
-    width: 40%
+    width: 40%;
+ margin: 0% 5% 2% 20%;   
 }
 
-/* Style the links inside the navigation bar */
+
 .day_menu a {
   float: left;
   color:#063E8D ;
@@ -362,15 +375,15 @@ padding: 5% 5% 5% 5%;
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
+
 .day_menu a:hover {
   background-color: #EA4E4F; /* Dark grey background on mouse-over */
  color: #fff;
 }
- /*new schedule setup*/
+
 
 }
-/* table schedule */
+/* table schedule 
 
 .schedule{
 padding: 2% 15% 2% 5%;
@@ -388,7 +401,7 @@ padding: 2% 15% 2% 5%;
     flex-direction: column
 }
 
-/* tbd */
+
 
 .schedule tr {
     border-top: 2px orange solid;
@@ -397,8 +410,80 @@ padding: 2% 15% 2% 5%;
 .schedule p {
     border-top: 2px #EA4E4F solid;
     
+} */
+
+        
+* {
+  box-sizing: border-box;
 }
 
+/* Create three equal columns that floats next to each other */
+.column {
+  width: 10%;
+  height: auto; 
+  color:#581226;
+    padding-left: 2%;
+    display: flex;
+    margin-left: 30%;
+ 
+    
+    
+    /* Should be removed. Only for demonstration */
+}
+.column2 {
+  width: 20%;
+  height: auto; 
+  color:#581226;
+    padding-left: 2%;
+    border-top-style: solid;
+    border-color:  #EA4E4F;
+    border-top-width: thin;
+    /* Should be removed. Only for demonstration */
+}
+.column3 {
+  width: 10%;
+  height: auto; 
+  color:#581226;
+    border-top-style: solid;
+    border-color:  #EA4E4F;
+    border-top-width: thin;
+    line-height: 170%;
+    align-items: center;
+    /* Should be removed. Only for demonstration */
+}
+                       
+               }
+
+/* Clear floats after the columns */
+.row:after {
+  display: table;
+  align-content: center;
+  clear: both;
+border-top-style: solid;
+    border-color:  #EA4E4F;
+}
+
+
+/*registar and ticket form page*/
+
+.tix{
+    
+}
+.tix_button{
+    width:15%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.tix_button:hover{
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}  
+    
+}
 
 /*registar form page*/
 
@@ -465,6 +550,7 @@ input.invalid {
 .col-25 {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
+    float: right;
 }
 
 .col-50 {
@@ -490,6 +576,8 @@ input.invalid {
   border-radius: 3px;
     width: 60%;
     flex-direction: column;
+    
+    
 }
 
 input[type=text] {
@@ -647,7 +735,92 @@ span.price {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
+@media only screen and (max-width: 1024px min-width:769px) {
+    /* tablets  */
+.burger-nav{
+        display: block;
+        height: 40px;
+        width: 90%;
+        background: url(/imgs/nav_icon.png) no-repeat 98% center;
+        background-color: #404040;
+         cursor: pointer;
+        
+    } 
+    
+    .menu ul  {
+        font-size: 200px;
+        
+    }
+    
+    .header_pic{
+        width:20%;
+    }
+     .menu ul  {
+        overflow: hidden;
+        background: grey;
+        //height:0;
+        
+    }
+    
+.hero_section h1{
+font-size: 45px;
+        
+    }
+ .hero_section h2{
+font-size: 72px;
+    }
+.about_section{
+ font-size: 30px; 
 
+    
+}
+
+footer{
+    width: 100%;
+    }
+    
+    .map{
+     padding: 5%;
+        
+    }
+
+    
+}
+@media only screen and (max-width: 768px){
+     .burger-nav{
+        display: block;
+        height: 40px;
+        width: 90%;
+        background: url(imgs/nav_icon.png) no-repeat 98% center;
+        background-color: #404040;
+        cursor: pointer;
+        
+    } 
+    
+    .column2 {
+      margin-left:320px;
+      
+      
+    }
+    
+    .column3{
+      margin-left:490px;
+  
+ 
+
+    
+    }
+    
+    footer{
+    width: 100%;
+    }
+    
+    .map{
+     padding: .15%;
+        
+    }
+
+}
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
