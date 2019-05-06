@@ -130,17 +130,7 @@ header{
     line-height: normal;
     text-align: center;
 }
-.hidden_headings{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: none;
-    color: #063E8D;
-    font-size: 15px;
-    line-height: normal;
-    text-align: center;
-    display: none;
-}
+
 .logo{
     margin: 10px;
 }
@@ -206,8 +196,10 @@ flex-direction: row;
     
 }
 .map{
-padding-left: 5%;
- padding-top: 5%;
+padding: 5%;
+align-items: center;
+    float: right;
+    
     
 }
 
@@ -292,13 +284,13 @@ margin:.3rem;
 .vertical-menu a {
   background-color: #fff; 
   color: #063E8D; 
-  display: block; /* Make the links appear below each other */
+  display: block; 
   padding: 2% 60% 2% 5%;  /* Add some padding */
   text-decoration: none; /* Remove underline from links */
 }
 
 .vertical-menu a:hover {
-  background-color: #EA4E4F; /* Dark grey background on mouse-over */
+  background-color: #EA4E4F; 
 }
 
 
@@ -417,18 +409,15 @@ padding: 2% 15% 2% 5%;
   box-sizing: border-box;
 }
 
-/* Create three equal columns that floats next to each other */
+
 .column {
-  width: 10%;
-  height: auto; 
-  color:#581226;
-    padding-left: 2%;
-    display: flex;
-    margin-left: 30%;
- 
-    
-    
-    /* Should be removed. Only for demonstration */
+width: 10%;
+height: auto; 
+color:#581226;
+padding-left: 2%;
+display: flex;
+margin-left: 30%;
+
 }
 .column2 {
   width: 20%;
@@ -438,22 +427,21 @@ padding: 2% 15% 2% 5%;
     border-top-style: solid;
     border-color:  #EA4E4F;
     border-top-width: thin;
-    /* Should be removed. Only for demonstration */
+
 }
 .column3 {
   width: 10%;
   height: auto; 
   color:#581226;
-    border-top-style: solid;
-    border-color:  #EA4E4F;
-    border-top-width: thin;
-    line-height: 170%;
-    align-items: center;
-    /* Should be removed. Only for demonstration */
+border-top-style: solid;
+border-color:  #EA4E4F;
+border-top-width: thin;
+line-height: 170%;
+align-items: center;
+   
 }
                        
-               }
-
+    
 /* Clear floats after the columns */
 .row:after {
   display: table;
@@ -767,7 +755,7 @@ font-size: 45px;
         
     }
  .hero_section h2{
-font-size: 72px;
+font-size: 400px;
     }
 .about_section{
  font-size: 30px; 
@@ -816,10 +804,49 @@ footer{
     }
     
     .map{
-     padding: .15%;
+     padding: 5%;
         
     }
-
+    .vertical-menu{
+     
+        
+    }
+}
+@media only screen and (max-width: 500px){
+    .burger-nav{
+        display: block;
+        height: 40px;
+        width: 90%;
+        background: url(imgs/nav_icon.png) no-repeat 98% center;
+        background-color: #404040;
+        cursor: pointer;
+        
+    } 
+    .hero_section h2 {
+      font-size:30px;  
+    }
+    .hero_section h1 {
+      font-size:20px;  
+    }
+    
+   .about_section{
+    font-size: 18px;
+    padding: 2% 40% 2% 5%;
+    }
+    
+    .name{
+    font-size: 40px
+    }
+    .job_title{
+        font-size: 18px;
+    }
+    .bio{
+        font-size:15px;
+    }
+    .tix_button{
+        width:25%;
+        
+    }
 }
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
