@@ -8,6 +8,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -25,16 +26,21 @@
 		<div class="logo">
 			<img alt="P.A. Dev Con" height="72px" src="imgs/logo.png" width="112.5px">
         </div>
+        <nav>
+            <a class="burger-nav"></a>
         <div class="menu">
             <ul>
              <li><a href="index.html" class="headings">Home</a></li>
                 <li><a href="#about" class="headings">About</a></li>
                 <li><a href="sponsor%20page.html" class="headings">Sponsors</a></li>
-                <li><a href="speakers%20page.html" class="headings">Speakers</a></li>
+                <li><a href="speakers%20page%20copy.html" class="headings">Speakers</a></li>
                 <li><a href="schedule_page.html" class="headings">Schedule</a></li>
-                <li><a href="tix_page.html" class="headings"><img src="imgs/tix_button.png" class="tix_button"></a></li> 
+                <li><a href="tix_page.html" class="headings"><img src="imgs/tix_button.png" class="tix_heading"></a></li> 
+                <li><a href="speaker_info.html" class=" hidden_headings">Speakers</a></li>
+                <li><a href="sponsor_info.html" class=" hidden_headings">Sponsors</a></li>
             </ul>
         </div>
+        </nav>
         <div class="tix">
             
         
@@ -61,5 +67,6 @@
     </footer>
     
 </body>
-
+    <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="menu.js"></script>
 </html>
