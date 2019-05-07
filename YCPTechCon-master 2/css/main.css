@@ -1,0 +1,983 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,700');
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    color: #063E8D;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+    background-image: linear-gradient(to bottom right, #064F8D, #581226);
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+}
+
+.no_grad{
+    background: #fff;
+}
+
+header{
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headings{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color: #063E8D;
+    font-size: 15px;
+    line-height: normal;
+    text-align: center;
+}
+
+.logo{
+    margin: 10px;
+}
+   
+.menu{
+    width: auto;
+}
+.menu ul{
+    display: flex;
+    list-style-type: none;    
+}
+
+.menu ul li{
+    margin: 0px 30px 0px 30px;
+}
+
+menu ul li a{
+display: block;
+text-decoration: none;    
+}
+.tix_heading{
+width: 219,5px;
+height: 40px;
+}
+
+
+
+.squeeze_me{
+padding: 2% 15% 2% 5%;
+    
+}
+.hero_section h1{
+font-family: 'Roboto', sans-serif;
+color: #fff;
+font-weight: bold;
+font-size: 72px;
+
+} 
+.hero_section h2 {
+font-family: 'Roboto', sans-serif;
+color: #EA4E4F;
+font-size: 60px;
+font-weight: bold;
+    
+} 
+
+.about_section{
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 24px;
+color: #EA4E4F;
+padding: 2% 60% 2% 5%; 
+    
+}
+ 
+footer{
+height: 700px;
+width: 100%;
+background-color: #591226;
+display: flex;
+flex-direction: row;
+ 
+    
+}
+.map{
+padding: 5%;
+align-items: center;
+    float: right;
+    
+    
+}
+
+/* speaker styling*/
+
+.header_pic{
+width:70%;
+padding: 10%;
+}
+
+.speaker_grid{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin:auto;
+    flex-direction: row;
+    flex-wrap:wrap;
+}       
+
+.img-gallery {
+width:13rem;
+margin:.3rem;
+   -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.img-gallery:hover {
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.img-name {
+width:13rem;
+margin:.3rem;
+}
+
+
+/*speakers-in depth bio  this is also syling for the sponsor pages*/
+
+
+.speaker_column{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items:top;
+    margin:auto;
+    flex-direction: row;
+}
+
+.speaker_info{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items:top;
+    margin:auto;
+    flex-direction: column;
+}
+.speaker_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;  
+}
+.speaker_box img {
+    width: 60%;
+    height: auto;
+    padding:;    
+}
+/* speaker vertical menu styling*/
+
+.vertical-menu {
+    width: 28%;
+    height: 250px;
+    overflow-y: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1em;
+}
+
+.vertical-menu a {
+  background-color: #fff; 
+  color: #063E8D; 
+  display: block; 
+  padding: 2% 60% 2% 5%;  /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #EA4E4F; 
+}
+
+
+ /* styling for bios for indepth speaker page */   
+
+
+.name{
+color:#581226;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+font-size: 96px;
+}
+
+.job_title{
+color:#581226;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 24px;
+}
+
+  
+.bio{
+color:#581226;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 18px;
+}
+
+
+
+
+/* sponsor styling*/
+
+.sponsors-gallary{
+width:13rem;
+margin:1rem; 
+}
+/*schedule styling */
+
+
+.schedule_content{
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 20px;
+color: #591226;
+padding-left: 5%;
+display:flex;  
+}
+ 
+.day{
+width: 15%;  
+padding: 5% 5% 5% 5%;
+    
+}
+
+/* the day menu nav for the schedule page */
+
+
+
+.day_menu {
+  background-color: #fff;
+  overflow: hidden;
+    width: 40%;
+ margin: 0% 5% 2% 20%;   
+}
+
+
+.day_menu a {
+  float: left;
+  color:#063E8D ;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.day_menu a:hover {
+  background-color: #EA4E4F; /* Dark grey background on mouse-over */
+ color: #fff;
+}
+
+
+}
+/* table schedule 
+
+.schedule{
+padding: 2% 15% 2% 5%;
+    
+}
+
+.schedule tr{
+    
+}
+
+.schedule tr td{
+    display: flex;
+    justify-content: normal;
+    padding: 2% 15% 2% 5%; 
+    flex-direction: column
+}
+
+
+
+.schedule tr {
+    border-top: 2px orange solid;
+}
+
+.schedule p {
+    border-top: 2px #EA4E4F solid;
+    
+} */
+
+        
+* {
+  box-sizing: border-box;
+}
+
+
+.column {
+width: 10%;
+height: auto; 
+color:#581226;
+padding-left: 2%;
+display: flex;
+margin-left: 30%;
+
+}
+.column2 {
+  width: 20%;
+  height: auto; 
+  color:#581226;
+    padding-left: 2%;
+    border-top-style: solid;
+    border-color:  #EA4E4F;
+    border-top-width: thin;
+
+}
+.column3 {
+  width: 10%;
+  height: auto; 
+  color:#581226;
+border-top-style: solid;
+border-color:  #EA4E4F;
+border-top-width: thin;
+line-height: 170%;
+align-items: center;
+   
+}
+                       
+    
+/* Clear floats after the columns */
+.row:after {
+  display: table;
+  align-content: center;
+  clear: both;
+border-top-style: solid;
+    border-color:  #EA4E4F;
+}
+
+
+/*registar and ticket form page*/
+
+.tix{
+    
+}
+.tix_button{
+    width:15%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.tix_button:hover{
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}  
+    
+}
+
+/*registar form page*/
+
+/* Style the form */
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none; 
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+/*ticket and paying page*/
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 20px -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+    float: right;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 20px 16px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 5px 25px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+    width: 60%;
+    flex-direction: column;
+    
+    
+}
+
+input[type=text] {
+  width: 55%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #581226;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+}
+
+.btn {
+  background-color: #063E8D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+font-weight: 400;
+}
+
+.btn:hover {
+  background-color: #EA4E4F;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+@media only screen and (max-width: 1024px min-width:769px) {
+    /* tablets  */
+
+    
+    .menu ul  {
+        font-size: 200px;
+        flex-direction: column;
+    }
+    
+    .header_pic{
+        width:20%;
+    }
+     .menu ul  {
+        overflow: hidden;
+        background: grey;
+        //height:0;
+        
+    }
+    
+.hero_section h1{
+font-size: 45px;
+        
+    }
+ .hero_section h2{
+font-size: 400px;
+    }
+.about_section{
+ font-size: 30px; 
+
+    
+}
+
+footer{
+    width: 100%;
+    }
+    
+    .map{
+     padding: 5%;
+        
+    }
+
+    
+}
+@media only screen and (max-width: 768px){
+     
+    .column2 {
+      margin-left:320px;
+      
+      
+    }
+    
+    .column3{
+      margin-left:490px;
+  
+    }
+    
+    footer{
+    width: 100%;
+    }
+    
+    .map{
+     padding: 5%;
+        
+    }
+    .vertical-menu{
+     width: 100%;
+        
+    }
+     
+         
+         
+    
+}
+@media only screen and (max-width: 500px){
+    
+
+    .hero_section h2 {
+      font-size:30px;  
+    }
+    .hero_section h1 {
+      font-size:20px;  
+    }
+    
+   .about_section{
+    font-size: 18px;
+    padding: 2% 40% 2% 5%;
+    }
+    
+    .name{
+    font-size: 40px;
+    width: 100%;
+    }
+    .job_title{
+        font-size: 18px;
+        width: 100%;
+    }
+    .bio{
+        font-size:15px;
+        width: 100%;
+        
+   
+    }
+    .speaker_column{
+        width: 100%;
+        flex-direction: column;
+    }
+    .vertical-menu a {
+   justify-content: center;
+    align-items: center;
+    display: flex;
+        
+    
+    }
+    .tix_button{
+        width:60%;
+        justify-content: center;
+        align-content: center;
+        display: flex;
+        padding: 2% 0% 15% 20%;
+            
+        
+        
+    }
+    
+    .tix_button:hover{
+    }
+    
+    .menu ul{
+    display: block;
+    line-height: 35px;
+   justify-content: center;
+    background: #fff;
+    //height:0;
+        
+       
+        }
+
+      .menu ul.open{
+            height:auto;
+          
+    
+    }
+    .menu ul li {
+        font-size: 20px;
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin:0;
+        
+        
+    }
+    
+    menu ul li a{
+        color:black;
+        padding:10px;
+        border-bottom: 10px solid red;
+        display: block;
+        
+        
+    }
+            
+    .tix_heading{
+        padding-right: none;
+     
+        
+    }
+       .burger-nav{
+        display: block;
+        height: 40px;
+        width: 100%;
+        background: url(/imgs/nav_icon.png) no-repeat 90% center;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    
+}
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
