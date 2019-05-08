@@ -6,3 +6,6 @@ what you'll fing in here
 -css
 -JS
 -associated images and other files
+
+this website works on mobile, tablets and desktop
+
