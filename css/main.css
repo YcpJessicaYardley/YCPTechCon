@@ -137,6 +137,7 @@ header{
    
 .menu{
     width: auto;
+    padding: 2%;
 }
 .menu ul{
     display: flex;
@@ -152,8 +153,13 @@ display: block;
 text-decoration: none;    
 }
 .tix_heading{
-width: 219,5px;
+width: 200px;
 height: 40px;
+margin: -9px;
+}
+
+.hamburger{
+  display: none;
 }
 
 
@@ -196,11 +202,33 @@ flex-direction: row;
     
 }
 .map{
-padding: 5%;
 align-items: center;
     float: right;
-    
-    
+
+}
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #591226; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
 }
 
 /* speaker styling*/
@@ -215,7 +243,7 @@ padding: 10%;
     display: flex;
     justify-content: center;
     align-items:center;
-    margin:auto;
+    margin:2%;
     flex-direction: row;
     flex-wrap:wrap;
 }       
@@ -238,7 +266,7 @@ margin:.3rem;
 }
 
 
-/*speakers-in depth bio  this is also syling for the sponsor pages*/
+/*speakers-in depth bio  this is also syling for the sponsor in in-depth pages*/
 
 
 .speaker_column{
@@ -353,7 +381,7 @@ padding: 5% 5% 5% 5%;
 .day_menu {
   background-color: #fff;
   overflow: hidden;
-    width: 40%;
+    width: 60%;
  margin: 0% 5% 2% 20%;   
 }
 
@@ -612,13 +640,91 @@ span.price {
   color: grey;
 }
 
+
+/* Hamburger Menu */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #581226;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
-@media (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .row {
-    flex-direction: column-reverse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 100%
+  }
+
+  .column,
+  .column2,
+  .column3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
   }
   .col-25 {
     margin-bottom: 20px;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .hamburger {
+    display: inline;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+  .menu ul{
+    display: none;
   }
 }
  
@@ -725,6 +831,7 @@ span.price {
 }
 @media only screen and (max-width: 1024px min-width:769px) {
     /* tablets  */
+    
 .burger-nav{
         display: block;
         height: 40px;
@@ -784,35 +891,10 @@ footer{
         cursor: pointer;
         
     } 
-    
-    .column2 {
-      margin-left:320px;
-      
-      
-    }
-    
-    .column3{
-      margin-left:490px;
-  
- 
 
-    
-    }
-    
-    footer{
-    width: 100%;
-    }
-    
-    .map{
-     padding: 5%;
-        
-    }
-    .vertical-menu{
-     
-        
-    }
 }
 @media only screen and (max-width: 500px){
+    
     .burger-nav{
         display: block;
         height: 40px;
