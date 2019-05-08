@@ -33,8 +33,8 @@
                 <li><a href="speakers%20page%20copy.html" class="headings">Speakers</a></li>
                 <li><a href="schedule_page.html" class="headings">Schedule</a></li>
                 <li><a href="tix_page.html" class="headings"><img src="imgs/tix_button.png" class="tix_heading"></a></li> 
-                
             </ul>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="hamburger">&#9776;</span>
         </div>
         
 	</header>
@@ -130,5 +130,17 @@
 </div>
     
 </body>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
 
 </html>
